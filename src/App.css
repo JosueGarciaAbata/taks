@@ -1,0 +1,103 @@
+button {
+  cursor: pointer;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+
+.todo {
+  background-color: #ff6666;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1rem 2rem;
+
+  p,
+  h1 {
+    margin: 0;
+  }
+}
+
+.todo-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 1rem;
+
+  background-color: #ff7676;
+  padding: 0 20px;
+  margin: 5px 10px;
+
+  input {
+    background: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+}
+
+.todo-image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 25px;
+    height: 20px;
+    color: white;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+
+    img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg)
+        brightness(100%) contrast(100%);
+    }
+  }
+}
+
+.todo-form {
+  padding: 2rem;
+
+  h2 {
+    margin: 10px 0;
+  }
+}
+
+.todo-input {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+
+  input {
+    background-color: white;
+    border-color: #ff7676;
+    padding: 1rem;
+    color: black;
+  }
+
+  button {
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+  }
+}
